@@ -22,11 +22,9 @@ public class LoggedActivity extends AppCompatActivity {
         searchView = findViewById(R.id.searchView);
         list = findViewById(R.id.listView);
 
-        array.add("Você leu na posição 1");
-        array.add("Você leu na posição 2");
-        array.add("Você leu na posição 3");
-        array.add("Você leu na posição 4");
-        array.add("Você leu na posição 5");
+        for(int i =0; i<10; i++){
+            array.add("Posição " + i);
+        }
 
         adapter = new ArrayAdapter<String>(getApplicationContext(), android.R.layout.simple_list_item_1, array);
 
