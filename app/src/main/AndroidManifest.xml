@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MateusSeiboth"
         tools:targetApi="31">
         <activity
+            android:name=".StylesActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoggedActivity"
             android:exported="false" />
         <activity

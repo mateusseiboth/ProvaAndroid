@@ -61,7 +61,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e("Valores do form são", ("\n Usuario:" + validaEmail + "\n Senha: " + validaSenha));
                 Toast.makeText(getApplicationContext(),"Usuário Logado", Toast.LENGTH_SHORT).show();
 
-                Intent i = new Intent(MainActivity.this, LoggedActivity.class);
+                Intent i = new Intent(MainActivity.this, StylesActivity.class);
+                Bundle b = new Bundle();
+                b.putString("mail", validaEmail);
+                i.putExtras(b);
                 startActivity(i);
 
             } catch (Exception e) {
