@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MateusSeiboth</string>
+    <string name="text1">Aplicativa para cadastro e consulta de atividades complementares</string>
+    <string name="button1">CADASTRO DE ATIVIDADES COMPLEMENTARES</string>
+    <string name="button2">CONSULTA DE ATIVIDADES COMPLEMENTARES</string>
+    <string name="text2">Insira as informações da atividade complementar a ser cadastrada</string>
+    <string-array name="options">
+        <item>Categoria 1 – Cursos"</item>
+        <item>Categoria 2 – Projetos</item>
+        <item>Categoria 3 – Pesquisas</item>
+    </string-array>
 </resources>
