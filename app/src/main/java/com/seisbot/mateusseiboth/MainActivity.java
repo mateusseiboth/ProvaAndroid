@@ -26,14 +26,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnCad = findViewById(R.id.btnCadastro);
         btnCad.setOnClickListener(this);
 
+        btnList = findViewById(R.id.btnConsulta);
+        btnList.setOnClickListener(this);
+
     }
     @Override
     public void onClick(View view) {
+        try{
             Log.e("Passei", "Passei aqui");
-            try{
-                   Intent i = new Intent(MainActivity.this, CadastroActivity.class);
-                   startActivity(i);
-
+            if(view.getId() == btnCad.getId()){
+                Intent i = new Intent(MainActivity.this, CadastroActivity.class);
+                startActivity(i);
+            }
+            if(view.getId() == btnList.getId()){
+                Intent i = new Intent(MainActivity.this, ListaActivity.class);
+                startActivity(i);
+            }
             } catch (Exception e) {
                 Log.d("Exception", e.toString());
                 //throw new RuntimeException(e);

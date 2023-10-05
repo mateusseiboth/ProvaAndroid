@@ -57,12 +57,9 @@ public class AtividadeComplementar {
 
     @Override
     public String toString() {
-        return "AtividadeComplementar{" +
-                "nome='" + nome + '\'' +
-                ", email='" + email + '\'' +
-                ", documento='" + documento + '\'' +
-                ", horas='" + horas + '\'' +
-                ", categoria='" + categoria + '\'' +
-                '}';
+        return
+                "Estudante: " + nome + "\n" +
+                "E-mail: " + email + "\n" +
+                "Descrição da atividade: " + documento;
     }
 }

@@ -10,6 +10,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -83,18 +84,8 @@ public class CadastroActivity extends AppCompatActivity  implements View.OnClick
         }
         AtividadeComplementar atividade = new AtividadeComplementar(edNome.getText().toString(), edMail.getText().toString(), edDocumento.getText().toString(), dHoras.getText().toString(), select);
         applica.addAtividade(atividade);
-        mostrar();
-    }
-
-
-
-    public void mostrar(){
-        Applica conext1 = (Applica) getApplication();
-        List<AtividadeComplementar> atividades = conext1.getAtividadesList();
-        for(AtividadeComplementar item : atividades) {
-            Log.e("Item", item.toString());
-
-        }
+        Toast.makeText(getApplicationContext(),"Cadastrado com sucesso", Toast.LENGTH_SHORT).show();
+       finish();
     }
 
 }
